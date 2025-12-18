@@ -160,83 +160,165 @@ footer
 ```
 ```
 menu.html
-body
-{
-    background: url("homepage.jpg") ;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: cover;
-}
-.header
-{
-    color: aliceblue;
-    padding-left: 100;
-    padding-top: 90;
-    font-size: 35;
-    font: 'Cormorant Garamond',serif;
-}
-.sub
-{
-    color:beige;
-    font-size: 25;
-    font-style: italic;
-    font-weight: bolder;
-    
-}
-.content
-{
-    text-align: right;
-    color:black;
-    font-weight: bolder;
-    font-size: 20;
-    font-style: italic;
-    background-color: rgba(243, 220, 195, 0.8) ;
-    
-    height: 100;
-    width: 1870;
-    padding-top: 0.08;
-    
-    
-    
-    
-}
+<html>
+    <head>
+        <title>
+            Menu
+        </title>
+        <style>
+            body
+                {
+                    background: url("4.jpg") ;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-size: cover;
+                }
+            .head 
+            {
+                padding-left: 50;
+                padding-top: 60;
+                color: aliceblue;
+                font: 'Cormorant Garamond',serif;
+                font-size: 23;
+            }
+            .nav {
+                margin-top: 20px;
+                text-align: right;
 
-.nav {
-    margin-top: 20px;
-    text-align: right;
+            }
+            .nav a {
+                color: white;
+                text-decoration: none;
+                margin-right: 20px;
+                font-family: 'Lora', serif;
+                letter-spacing: 2px;
+            }
 
-}
-.nav a {
-    color: white;
-    text-decoration: none;
-    margin-right: 20px;
-    font-family: 'Lora', serif;
-    letter-spacing: 2px;
-}
+            .nav a:hover {
+                text-decoration: underline;
+            }
+            .spe{
+                padding-left: 40;
+                font-weight: bolder;
+                font-size: 26;
+                font-family: 'Lora', serif;
+                color: aliceblue;
+            }
+            footer
+            {
+                text-align: center;
+                background-color: rgba(243, 220, 195, 0.8) ;
+                margin-top: 60;
+                height:15;
+            }
+            .cont {
+                display: flex;
+                gap: 80px;
+                padding: 0 60px;
+            }
+            .items {
+                background:rgba(243, 220, 195, 0.8);
+                width: 250px;
+                border-radius: 15px;
+                padding: 10px;
+                text-align: center;
+            }
+            .items img {
+                width: 100%;
+                height: 130px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
 
-.nav a:hover {
-    text-decoration: underline;
-}
-.one {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    margin: 40px 60px;
-}
+            .items h3 {
+                margin: 10px 0 5px;
+            }
 
-.one img {
-    width: 650px;
-    height: 345px;
-    object-fit: cover;
-    border-radius: 10px;
-    
-}
-footer
-{
-    text-align: center;
-    background-color: rgba(243, 220, 195, 0.8) ;
-}
+            .items p {
+                font-size: 14px;
+            }
+
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="head">
+            <h1>MENU</h1>
+        </div>
+        <div class="nav">
+            <a href="rest.html"  >HOME</a>
+            <a href="admin.html" >ADMIN </a>
+            <a href="contact.html" >CONTACT</a>
+        </div>
+        <hr>
+        <div class="spe">
+            <p>Today's Special</p>
+        </div>
+        
+        
+        <div class="cont">
+            <div class="items">
+                <img src="a.jpg">
+                <h3>Lasagna al Forno</h3>
+                <p>Rs.210</p>
+            </div>
+            <div class="items">
+                <img src="b.png">
+                <h3>Truffle Risotto</h3>
+                <p>Rs.200</p>
+            </div>
+            <div class="items">
+                <img src="c.jpg">
+                <h3>Margherita Pizza</h3>
+                <p>Rs.190</p>
+            </div>
+            <div class="items">
+                <img src="d.jpg">
+                <h3>Chicken Steak</h3>
+                <p>Rs.220</p>
+            </div>
+            <div class="items">
+                <img src="e.jpg">
+                <h3>Classic Tiramisu</h3>
+                <p>Rs.200</p>
+            </div>
+        
+
+      
+
+        </div>
+        <hr>
+        <br>
+        <div class="spe">
+            <p>Most Loved</p>
+        </div>
+        <div class="cont">
+            <div class="items">
+                <img src="f.jpg">
+                <h3>Pasta</h3>
+                <p>Rs.170</p>
+            </div>
+             <div class="items">
+                <img src="g.jpg">
+                <h3>Focaccia Bread</h3>
+                <p>Rs.150</p>
+            </div>
+             <div class="items">
+                <img src="h.jpg">
+                <h3>Gelato</h3>
+                <p>Rs.140</p>
+            </div>
+
+        </div>
+        <hr>
+        <footer>
+            <p>&copy; Arunjuthan.M.A (25016022) </p>
+        </footer>
+        
+    </body>
+</html>
 
 ```
 ```
